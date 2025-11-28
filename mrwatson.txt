@@ -1,0 +1,7 @@
+tesing linux pull/push to GitHub
+
+//If you are reading this, I successfully learned to create and edit documents in my GitHub repo and local, then commit and push those changes back to GitHub.
+
+//One small step for man....
+
+

@@ -1,0 +1,51 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Centering content */
+.containter {
+    width: 90%;
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+/* Titles */
+.title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    padding: 15px;
+    margin: 15px 0;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+/* Header bars for subpages */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: #555;
+}
+
+.back-btn {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
