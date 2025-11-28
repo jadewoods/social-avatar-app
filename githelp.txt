@@ -1,0 +1,83 @@
+=========================
+GitHub Update Workflow (Linux Terminal)
+=========================
+
+Assumptions:
+- Project folder: ~/social-avatar-app
+- GitHub repo: https://github.com/jadewoods/social-avatar-app
+
+---------------------------------
+Step 1 — Navigate to your project folder
+---------------------------------
+cd ~/social-avatar-app
+
+# Verify you are in the working directory
+pwd
+ls -a
+
+---------------------------------
+Step 2 — Check your branch
+---------------------------------
+git branch
+
+# Example output: * main
+# Note your branch name if different
+
+---------------------------------
+Step 3 — Pull the latest changes from GitHub
+---------------------------------
+git pull --rebase origin main
+
+# Replace 'main' with your branch name if different
+# --rebase applies local changes on top of remote changes
+
+---------------------------------
+Step 4 — Stage your changes
+---------------------------------
+# Stage all changes:
+git add .
+
+# Or stage individual files:
+git add filename.ext
+
+---------------------------------
+Step 5 — Commit your changes
+---------------------------------
+git commit -m "Describe your update here"
+
+# Example:
+git commit -m "Fixed login page and updated image slider"
+
+---------------------------------
+Step 6 — Push to GitHub
+---------------------------------
+# First time push for this branch (sets upstream):
+git push --set-upstream origin main
+
+# Future pushes are simpler:
+git push
+
+---------------------------------
+Step 7 — Verify
+---------------------------------
+# Check your files on GitHub
+# Optional: see commit history
+git log --oneline -5
+
+---------------------------------
+Optional Commands & Tips
+---------------------------------
+# Check status anytime
+git status
+
+# View remotes
+git remote -v
+
+# See branch tracking info
+git branch -vv
+
+# Notes:
+# - Always work in the main project folder, NOT inside .git
+# - Use git pull --rebase before pushing to avoid conflicts
+# - Commit frequently with descriptive messages
+
